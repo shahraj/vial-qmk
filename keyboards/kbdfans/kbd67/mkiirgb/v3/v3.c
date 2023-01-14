@@ -126,7 +126,7 @@ led_config_t g_led_config = { {
 #if defined(RGB_MATRIX_ENABLE) && defined(CAPS_LOCK_LED_INDEX)
 
 #ifdef RGB_MATRIX_MAXIMUM_BRIGHTNESS
-    #define CAPS_LOCK_MAX_BRIGHTNESS RGB_MATRIX_MAXIMUM_BRIGHTNESS
+    #define CAPS_LOCK_MAX_BRIGHTNESS 0xFF
 #else
     #define CAPS_LOCK_MAX_BRIGHTNESS 0xFF
 #endif
@@ -148,7 +148,7 @@ void rgb_matrix_indicators_user(void) {
         } else {
             b = CAPS_LOCK_MAX_BRIGHTNESS;
         }
-        rgb_matrix_set_color(CAPS_LOCK_LED_INDEX, b, b, b);  // white, with the adjusted brightness
+        rgb_matrix_set_color(CAPS_LOCK_LED_INDEX, 0xFF, 0xFF, 0xFF);  // white, with the adjusted brightness
     }
 }
 
