@@ -1,5 +1,11 @@
 VIA_ENABLE=yes
 VIAL_ENABLE=yes
 
+LTO_ENABLE = yes
+
 VIALRGB_ENABLE=yes
 ENCODER_MAP_ENABLE=yes
+
+QMK_SETTINGS = yes # ~2560 bytes
+TAP_DANCE_ENABLE = yes # ~2196 bytes
+COMBO_ENABLE = no # ~2408 bytes

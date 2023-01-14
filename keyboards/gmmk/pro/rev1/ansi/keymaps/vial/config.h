@@ -23,11 +23,20 @@
 #define DRIVER_2_LED_TOTAL 32
 #define DRIVER_LED_TOTAL (DRIVER_1_LED_TOTAL + DRIVER_2_LED_TOTAL)
 
-//enable RGB Matrix Effects for Vial
+// enable RGB Matrix Effects for Vial
 #define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 #define RGB_MATRIX_KEYPRESSES
 
-//Vial Keyboard UID
-#define VIAL_KEYBOARD_UID {0x03, 0x75, 0x3D, 0xEC, 0x97, 0xC2, 0xE9, 0x9A}
-#define VIAL_UNLOCK_COMBO_ROWS { 1, 10 }
-#define VIAL_UNLOCK_COMBO_COLS { 3, 4 }
+// Vial Keyboard UID
+#define VIAL_KEYBOARD_UID \
+    { 0x03, 0x75, 0x3D, 0xEC, 0x97, 0xC2, 0xE9, 0x9A }
+#define VIAL_UNLOCK_COMBO_ROWS \
+    { 1, 10 }
+#define VIAL_UNLOCK_COMBO_COLS \
+    { 3, 4 }
+
+#define USB_POLLING_INTERVAL_MS 1
+#define TAPPING_TERM 500
+#define RGB_DISABLE_AFTER_TIMEOUT 0    // number of ticks to wait until disabling effects
+#define RGB_DISABLE_WHEN_USB_SUSPENDED // turn off effects when suspended
+#define USB_SUSPEND_WAKEUP_DELAY 5000
